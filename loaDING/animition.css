@@ -1,0 +1,121 @@
+body, p, h1, h2, h3, h4, h5, h6, dl, dd { 
+  margin:0;
+}
+a { 
+  text-decoration: none;
+}
+ol, ul { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+img {
+  border: none;
+}   
+
+ body{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .sky{
+/*  position: absolute;
+  top: 200px;
+  left: 0;*/
+ 	height: 300px;
+ 	width: 100%;
+ 	background: #007fd5;
+ 	opacity: 0.5;
+ 	overflow: hidden;
+ 	-webkit-animation: sky_background 50s ease-out infinite;
+ }
+ .moon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:url(moon.png)1050px -55px; 
+  height: 300px;
+  width: 100%;
+  -webkit-animation:moon 50s linear infinite;
+ }
+
+ @-webkit-keyframes sky_background {
+  0% {
+    background: #007fd5;
+    color: #007fd5;
+  }
+  50% {
+    background: #000;
+    color: #a3d9ff;
+  }
+  100% {
+    background: #007fd5;
+    color: #007fd5;
+  }
+}
+@-webkit-keyframes moon{
+  0%{
+    opacity: 0;
+    -webkit-transform: translate(200px,0);
+  }
+  50%{
+      opacity: 0.8;
+      -webkit-transform: translate(500px,0);
+      -webkit-transform: scale(1);
+  }
+  100%{
+      opacity: 0.8;
+      -webkit-transform: translate(100px,0);
+      -webkit-transform: scale(0.8);
+  }
+}
+.clouds_1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(cloud_one.png);
+  width: 100%;
+  height: 300px;
+  -webkit-animation: clouds_1 50s linear infinite;
+}
+@keyframes clouds_1 {
+  0%{
+    -webkit-transform: translate(0);
+  }
+  100%{
+    -webkit-transform: translate(-300px,0);
+  }
+}
+.clouds_2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(cloud_two.png);
+    width: 100%;
+    height: 300px;
+  -webkit-animation: clouds_2 50s linear infinite;
+}
+@keyframes clouds_2 {
+  0%{
+    -webkit-transform: translate(0);
+  }
+  100%{
+    -webkit-transform: translate(500px,0);
+  }
+}
+.clouds_3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(cloud_three.png);
+   width: 100%;
+  height: 300px;
+  -webkit-animation: clouds_3 60s linear infinite;
+}
+@keyframes clouds_3 {
+  0%{
+    -webkit-transform: translate(0);
+  }
+  100%{
+    -webkit-transform: translate(400px,0);
+  }
+}
